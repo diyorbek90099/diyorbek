@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Профиль ученика</title>
+    <style>
+        body {
+            background: #edf0f4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            max-width: 1400px;
+            margin: 30px auto;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .sidebar {
+            width: 370px;
+            background: #f7f8fa;
+            padding: 30px 20px;
+            border-right: 1px solid #e3e6ea;
+        }
+        .sidebar img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 20px auto;
+            background: #ddd;
+        }
+        .sidebar h2 {
+            font-size: 22px;
+            margin: 0 0 10px 0;
+            text-align: center;
+        }
+        .sidebar .section-title {
+            font-weight: bold;
+            margin: 25px 0 10px 0;
+            font-size: 16px;
+        }
+        .sidebar .info {
+            color: #666;
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+        .sidebar .info span {
+            color: #222;
+        }
+        .main {
+            flex: 1;
+            padding: 30px 40px;
+        }
+        .main h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .info-table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 15px;
+        }
+        .info-table td:first-child {
+            color: #888;
+            width: 220px;
+        }
+        .info-table td:last-child {
+            color: #222;
+        }
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar, .main {
+                width: 100%;
+                padding: 20px;
+            }
+            .main {
+                padding-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <img src="./1.jpg" alt="Фото ученика">
+            <h2>Шохназаров Диёрбек Азизович</h2>
+            <div class="section-title">Общая информация</div>
+            <div class="info">Возраст: <span>15 лет (24.12.2009)</span></div>
+            <div class="section-title">Контакты</div>
+            <div class="info">Email: <span>abdurahmonovaziz339@gmail.com</span></div>
+            <div class="info">Телефон: <span>+998942372772</span></div>
+            <div class="info">Моб. телефон: <span>+998330092412</span></div>
+            <div class="info">Адрес: <span>Навабахор, Бешработ мфи.</span></div>
+            <div class="section-title">Заказчик</div>
+            <div class="info"><span>Абдурахмонов Азиз Шахназарович</span></div>
+            <div class="info">Кем приходится: <span>отец</span></div>
+            <div class="info">Телефон: <span>+998 93 310 66 76</span></div>
+            <div class="info">Моб. телефон: <span>+998935219305</span></div>
+            <div class="info">Место работы/учёбы: <span>GTR - 3</span></div>
+            <div class="section-title">Контактное лицо</div>
+            <div class="info"><span>Abduraxmonova Aziza</span></div>
+            <div class="info">Кем приходится: <span>мама</span></div>
+            <div class="info">Моб. телефон: <span>+998944992499</span></div>
+            <div class="info">Место работы/учёбы: <span>Uy bekasi</span></div>
+        </aside>
+        <main class="main">
+            <h3>Информация по ученику</h3>
+            <table class="info-table">
+                <tr>
+                    <td>Филиалы:</td>
+                    <td>Sensorika Education</td>
+                </tr>
+                <tr>
+                    <td>Категория:</td>
+                    <td>Школьники</td>
+                </tr>
+                <tr>
+                    <td>Тип:</td>
+                    <td>Элементарный</td>
+                </tr>
+                <tr>
+                    <td>Дисциплины:</td>
+                    <td>Python (Back-end дастурчи) (Элементарный), Frontend (Front-end дастурчи)</td>
+                </tr>
+                <tr>
+                    <td>Дата обращения:</td>
+                    <td>07.09.2024</td>
+                </tr>
+                <tr>
+                    <td>Цель обучения:</td>
+                    <td>Python дастурлаш</td>
+                </tr>
+            </table>
+        </main>
+    </div>
+</body>
+</html>
